@@ -1,0 +1,22 @@
+{
+  "name": "cl1",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "krzys1ek"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-ui": "^1.12.1",
+    "font-awesome": "font-awsome#^4.7.0",
+    "bootstrap": "v4.0.0-alpha.6"
+  }
+}
