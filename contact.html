@@ -1,0 +1,102 @@
+
+<html lang="pl-PL">
+    <head>
+        <title>amdesign</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" type="text/css"/>
+        <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" type="text/css">
+    </head>
+    <body>
+          <header>
+          <div class="container">
+              <div class="Header row">
+                  <div class="logo"> 
+                      <a href="index.html">  <img src="images/LOGO.jpg"></a>
+                    
+                  </div>
+                    <div class="menu">
+                           <ul>
+                                <li class="projects">
+                                    <a href="projects.html">Projekty</a>
+                                    <ul class='test'>
+                                        <li>
+                                            <a href="indywidualne.html">Indywidualne</a>
+                                        </li>
+                                        <li>Komercyjne</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="visualization.html">Wizualizacje</a>
+                                </li>
+                                <li>
+                                <a href="offer.html">Oferta</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Kontakt</a>
+                                </li>
+                            </ul>
+                    </div>
+             </div>
+         </div>
+      </header>
+        <section>
+        <form action="mail.php" id="contact-form" method="post">
+        <fieldset>
+            <legend>Formularz kontaktowy</legend>
+            <div class="item">
+                <label for="firstName">Imię<em>*</em></label>
+                <input required type="text" name="firstName" id="firstName" title="Proszę podać swoje Imię ">
+                                
+            </div>
+            <div class="item">
+                 <label for="secondName">Nazwisko<em>*</em></label>                
+                <input required type="text" name="secondName" id="secondName" title="Proszę podać swoje Nazwisko ">
+            </div>
+            <div class="item">
+                <label for="email">Email<em>*</em></label>
+                <input required type="email" name="email" id="email" title="Proszę podać swój adres e-mail">
+                                
+            </div>
+            <div class="item">
+                <label for="message">Wiadomość<em>*</em></label>
+                <textarea required rows="10" cols="20" name="message" id="message" title="Wpisz treść swojej wiadomości"></textarea>
+                                
+            </div>
+            <button type="submit" class="btn btn-success btn-lg">Wyślij</button>
+        </fieldset>
+    </form>
+            
+   </section>
+      <script src="bower_components/jquery/dist/jquery.min.js"></script>
+      <script src="bower_components/tether/dist/js/tether.js"></script>
+      <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.js"></script>
+<script>
+    $("#contact-form").validate({
+     errorClass: "text-error",
+  rules: {
+    subject: "required",
+    message: "required",
+    email: {
+      required: true,
+      email: true
+    }
+  },
+  messages: {
+    subject: "Nie wpisałeś tematu wiadomości",
+    message: "Nie wpisałeś treści wiadomości",
+    email: {
+      required: "Nie podałeś swojego adresu e-mail",
+      email: "Błędny format adresu e-mail"
+    }
+  }
+});
+</script>
+
+    </body>
+</html>

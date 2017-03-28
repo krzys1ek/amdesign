@@ -1,6 +1,3 @@
-
-
-
 $(function() {
     $('.slider').vegas({
         delay: 8000,
@@ -20,3 +17,9 @@ $(function() {
     
     });
 });
+
+$('.projects').hover(function() {
+         $('ul.test').css('display', 'block');
+     }, function() {
+         $('ul.test').css('display', 'none');
+     });
