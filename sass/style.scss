@@ -80,11 +80,6 @@ div.logo {
     display: flex;
 }
 
-
-.container-slider {
-    width:100%;
-    background: beige;
-}
 .menu ul {
     padding-left: 0px;
     display: flex;
@@ -104,6 +99,11 @@ li.projects {
 .title {
    font-size: 55px;
    margin: auto;   
+ }
+.welcome {
+     padding-top: 50px;
+     padding-bottom: 50px;
+    
  }
  .img-welcome{
      max-width: 100%;
@@ -163,6 +163,9 @@ li.projects {
  .divPhoto{
      margin-top: 10px;
 
+ }
+ *.three-photos{
+     padding: 50px 0 50px 0;
  }
 
  @media (max-width:950px){
@@ -255,9 +258,7 @@ a:hover, a:visited, a:link, a:active
             border: none;
             box-sizing: border-box;
         }
-        
-  
-        
+              
         #contact-form textarea + label {
             top: 0;
         }
@@ -268,9 +269,6 @@ a:hover, a:visited, a:link, a:active
             opacity: 0.7;
         }
         
-        #contact-form textarea:valid {
-            border: 2px solid #16FF84;
-        }
         
         .btn {
             width:100%;
@@ -279,3 +277,48 @@ a:hover, a:visited, a:link, a:active
         .text-error {
             color: rgb(255,148,148);
         }
+
+
+.text-1, .text-2, .text-3{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.img-2, .img-3{
+    padding-top: 30px;
+}
+/*img {
+    cursor: pointer;
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+img:hover {
+  -webkit-filter: grayscale(100%);
+}*/
+
+h4 {
+    font-size: 1.2em;
+}
+p {
+    font-size: 0.9em;
+}
+.w-100 .fa {
+    font-size:50px;
+    padding-bottom: 10px;
+}
+
+.col-sm-4 .fa {
+    font-size: 30px;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+.adres, .telefon, .email{
+    text-align: center;
+    padding-bottom: 30px;
+}

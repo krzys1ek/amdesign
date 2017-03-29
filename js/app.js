@@ -5,14 +5,11 @@ $(function() {
             { src: 'images/1.png' },
             { src: 'images/2.png' },
             { src: 'images/3.png' },
-            { src: 'images/4.png' }
+            { src: 'images/8.png' },
+            { src: 'images/6.png' }
         ],
                 animation: 'kenburns',
                         
-
-
-//            overlay: 'bower_components/vegas/dist/overlays/02.png',
-
       
     
     });
@@ -23,3 +20,8 @@ $('.projects').hover(function() {
      }, function() {
          $('ul.test').css('display', 'none');
      });
+
+$('#responsive-images').lightGallery({
+    
+}); 
+

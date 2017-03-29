@@ -17,6 +17,7 @@
   "dependencies": {
     "jquery-ui": "^1.12.1",
     "font-awesome": "font-awsome#^4.7.0",
-    "bootstrap": "v4.0.0-alpha.6"
+    "bootstrap": "v4.0.0-alpha.6",
+    "lightgallery": "^1.3.9"
   }
 }
