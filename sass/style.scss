@@ -360,7 +360,13 @@ img.galeria{
     max-width: 100%;
 }
 .responsive-images-row div {
-    padding: .5vh;
+    padding: 0.1%;
+}
+.gallery2{
+    text-align: center;
+}
+.row-gllery2 {
+    padding-bottom: 30px;
 }
 /*@media (max-width:720px){
     body > section.slider.vegas-container{
