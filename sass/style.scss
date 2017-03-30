@@ -12,52 +12,94 @@
   font-weight: normal;
   font-style: normal;
 }
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-/*
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'fontello';
-    src: url('../font/fontello.svg?76719643#fontello') format('svg');
-  }
+@font-face {
+    font-family: 'raleway';
+    src: url('font/raleway/raleway-bold-webfont.woff2') format('woff2'),
+         url('font/raleway/raleway-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
 }
-*/
- 
+@font-face {
+    font-family: 'raleway';
+    src: url('font/raleway/raleway-extralight-webfont.woff2') format('woff2'),
+         url('font/raleway/raleway-extralight-webfont.woff') format('woff');
+    font-weight:100;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'raleway';
+    src: url('font/raleway/raleway-regular-webfont.woff2') format('woff2'),
+         url('font/raleway/raleway-regular-webfont.woff') format('woff');
+    font-weight:200;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'raleway';
+    src: url('font/raleway/raleway-medium-webfont.woff2') format('woff2'),
+         url('font/raleway/raleway-medium-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
  [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
   speak: none;
- 
+
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
   margin-right: .2em;
   text-align: center;
   /* opacity: .8; */
- 
+
   /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
   text-transform: none;
- 
+
   /* fix buttons height, for twitter bootstrap */
   line-height: 1em;
- 
+
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
   margin-left: .2em;
- 
+
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
- 
+
   /* Font smoothing. That was taken from TWBS */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
- 
+
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
- 
+h3 {
+  font-family: 'raleway';
+  font-weight: bold;
+}
+p {
+  font-family: 'raleway';
+  font-weight: 200;
+  font-size: 0.9rem;
+}
+h4 {
+  font-family: 'raleway';
+  font-weight: 200;
+    font-size: 1.4em;
+}
+
+
+h4{
+  // font-family: 'raleway';
+  // font-weight: bold;
+  font-size: 1.4em;
+}
 .icon-lightbulb:before { content: '\f0eb'; } /* '' */
 
 div.logo {
@@ -74,6 +116,7 @@ div.logo {
         justify-content: space-between;
         padding-left:15px;
         padding-right: 15px;
+        padding-bottom: 15px;
 }
 
 .menu {
@@ -84,6 +127,8 @@ div.logo {
     padding-left: 0px;
     display: flex;
     align-items:center;
+    font-family: 'raleway';
+    font-weight: 300;
     li {
         margin-left:50px;
         list-style: none;
@@ -103,19 +148,18 @@ div.logo {
 li.projects {
     margin-left: 0px;
 }
-
-
-
-
-
 .title {
    font-size: 55px;
-   margin: auto;   
+   margin: auto;
  }
 .welcome {
-     padding-top: 50px;
-     padding-bottom: 50px;
-    
+     padding-top: 80px;
+     padding-bottom: 80px;
+     text-align: center;
+
+ }
+ .welcome-row {
+   align-items: center;
  }
  .img-welcome{
      max-width: 100%;
@@ -124,34 +168,31 @@ li.projects {
      font-size: 25px;
  }
  .welcome-pic {
-   
      p{
          font-size: 13px;
-         
      }
  }
  .welcome-pic h3 {
      font-size: 18px;
  }
-
-
  .icon-lightbulb{
      font-size: 40px;
  }
  #stin-menu li {
      list-style: none;
  }
-
  h5 {
      font-size: 16px;
+     font-family: 'raleway';
+     font-weight: 300;
  }
 
 .what {
-     background-color:rgba(0,0,0,0.1); 
+     background-color:rgba(0,0,0,0.1);
  }
  .nowy-design-row{
-     padding-bottom: 50px;
-     padding-top: 50px;
+     padding-bottom: 80px;
+     padding-top: 80px;
  }
  .nowy-design {
      margin-top: 10px;
@@ -159,7 +200,7 @@ li.projects {
      display: flex;
      flex-wrap:wrap;
      justify-content: space-around;
-     
+
  }
  .icon-div{
     width: 50%;
@@ -185,12 +226,12 @@ li.projects {
          margin: auto;
      }
  }
- 
+
  .w-100 {
        padding: 18px;
     background: beige;
  }
- 
+
  .col-6-img {
      img{
       width: 100%;
@@ -248,20 +289,23 @@ a:hover, a:visited, a:link, a:active
             width: 400px;
             max-width: 100%;
         }
-        
+
         #contact-form legend {
-            font-size: 24px;
+            font-family: 'relaway';
+            font-weight: 300;
+            text-align: center;
+            font-size: 1.8em;
         }
-        
+
         #contact-form em {
             color: red;
         }
-      
+
         #contact-form .item {
             position: relative;
-            margin: 28px 0;
+            margin: 20px 0;
         }
-        
+
         #contact-form input, #contact-form textarea {
             padding: 10px 35px;
             width: 100%;
@@ -270,18 +314,18 @@ a:hover, a:visited, a:link, a:active
             border: none;
             box-sizing: border-box;
         }
-              
+
         #contact-form textarea + label {
             top: 0;
         }
-        
+
         #contact-form textarea:focus + label, #contact-form textarea:valid + label {
             top: -32px;
             font-size: 16px;
             opacity: 0.7;
         }
-        
-        
+
+
         .btn {
             width:100%;
             letter-spacing: 2px;
@@ -301,25 +345,8 @@ a:hover, a:visited, a:link, a:active
 .img-2, .img-3{
     padding-top: 30px;
 }
-img {
-    cursor: pointer;
-  -webkit-transition: all 1s ease;
-     -moz-transition: all 1s ease;
-       -o-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-          transition: all 1s ease;
-}
- 
-img:hover {
-  -webkit-filter: grayscale(100%);
-}
 
-h4 {
-    font-size: 1.2em;
-}
-p {
-    font-size: 0.9em;
-}
+
 .w-100 .fa {
     font-size:50px;
     padding-bottom: 10px;
@@ -349,29 +376,9 @@ p {
         margin-left: 30px;
     }
 }
-
-
 .slider {
     height: 500px;
-    
-}
 
-img.galeria{
-    max-width: 100%;
-}
-.responsive-images-row div {
-    padding: 0.1%;
-}
-.gallery2{
-    text-align: center;
-}
-.row-gallery2 {
-    padding-bottom: 30px;
-}
-
-a:hover {
-     background-color:rgba(0,0,0,0.07);  
-     border-radius: 2px;
 }
 @media (max-width:620px){
     body > section.slider.vegas-container{
@@ -392,4 +399,40 @@ a:hover {
     .slider{
         height:400px !important;
     }
+}
+img.galeria{
+    max-width: 100%;
+}
+.responsive-images-row div {
+    padding: 0.1%;
+}
+.gallery2{
+    text-align: center;
+}
+.row-gallery2 {
+    padding-bottom: 30px;
+}
+
+a:hover {
+    border-bottom: 1px solid rgba(0,0,0,0.6);
+
+}
+.wizualizacje-galeria{
+  padding-bottom: 30px;
+}
+.fa-facebook:before{
+  color: #3b5998;
+  font-size: 30px;
+}
+.fcb:hover{
+  border:0px;
+}
+a.info{
+  font-family: 'relaway';
+  font-weight: bold;
+  font-size: 1em;
+}
+section.formularz{
+  padding-bottom: 80px;
+  padding-top:30px;
 }
