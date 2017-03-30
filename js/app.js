@@ -9,26 +9,21 @@ $(function() {
             { src: 'images/6.png' }
         ],
                 animation: 'kenburns',
-                        
-      
+
+
     
     });
 });
 
 $('.projects').hover(function() {
-         $('ul.test').css('display', 'block');
+         $('ul.margin').css('display', 'block');
      }, function() {
-         $('ul.test').css('display', 'none');
+         $('ul.margin').css('display', 'none');
      });
 
-//$('#aniimated-thumbnials').lightGallery({
-//    thumbnail:true,
-//    animateThumb: false,
-//    showThumbByDefault: false
-//}); 
 
 
     lightbox.option({
       'resizeDuration': 200,
-      'wrapAround': true
-    })
+      'wrapAround': true,
+    });
