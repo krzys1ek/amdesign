@@ -89,13 +89,25 @@ div.logo {
         list-style: none;
     }
 }
+@media (max-width:767px){
+    div > div.menu > ul {
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width:436px){
+    .menu ul li{
+        margin-left: 35px;
+    }
+}
 li.projects {
     margin-left: 0px;
 }
 
-.slider {
-    height: 600px;
-}
+
+
+
+
 .title {
    font-size: 55px;
    margin: auto;   
@@ -322,3 +334,49 @@ p {
     text-align: center;
     padding-bottom: 30px;
 }
+.row responsive-images-row {
+    padding-top: 15px;
+}
+#aniimated-thumbnials{
+    text-align: center;
+    padding-left: 15px
+}
+@media (max-width:767px){
+    #aniimated-thumbnials{
+        padding-top: 40px;
+        padding-left: 0px;
+    }li.projects{
+        margin-left: 30px;
+    }
+}
+
+
+.slider {
+    height: 600px;
+    
+}
+
+img.galeria{
+    max-width: 100%;
+}
+
+/*@media (max-width:720px){
+    body > section.slider.vegas-container{
+        height:290px !important;
+    }
+}*/
+/*@media (max-width:835px){
+    .slider{
+        height:300px;
+    }
+}*/
+/*@media (min-width:1030px){
+    .slider{
+        height:400px;
+    }
+}
+@media (min-width:1220px){
+    .slider{
+        height:500px;
+    }
+}*/

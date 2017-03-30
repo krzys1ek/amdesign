@@ -21,7 +21,14 @@ $('.projects').hover(function() {
          $('ul.test').css('display', 'none');
      });
 
-$('#responsive-images').lightGallery({
-    
-}); 
+//$('#aniimated-thumbnials').lightGallery({
+//    thumbnail:true,
+//    animateThumb: false,
+//    showThumbByDefault: false
+//}); 
 
+
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
