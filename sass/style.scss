@@ -359,7 +359,9 @@ p {
 img.galeria{
     max-width: 100%;
 }
-
+.responsive-images-row div {
+    padding: .5vh;
+}
 /*@media (max-width:720px){
     body > section.slider.vegas-container{
         height:290px !important;
