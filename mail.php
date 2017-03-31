@@ -9,7 +9,7 @@ $headers = 'From: ' . $_POST['email'] . "\r\n" .
 mail($to, $subject, $message, $headers);
 echo "<p style='font-size:40px; text-align:center' >".'Wiadomość została wysłana';
 
-header('Refresh: 1; url=http://amdesign.com.pl/projekt');
+header('Refresh: 1; url=amdesign.com.pl/projekt');
 
 
 ?>

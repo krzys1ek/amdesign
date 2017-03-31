@@ -1,122 +1,137 @@
+<!DOCTYPE html>
 
 <html lang="pl-PL">
-    <head>
-        <title>amdesign</title>
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" type="text/css"/>
-        <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" type="text/css">
-    </head>
-    <body>
-          <header>
-          <div class="container">
-              <div class="Header row">
-                  <div class="logo">
-                      <a href="index.html">  <img src="images/LOGO.jpg"></a>
+<head>
+    <title>amdesign</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" type="text/css">
+</head>
 
-                  </div>
-                    <div class="menu">
-                         <ul>
-                                <li class="projects">
-                                    <a href="#">Projekty</a>
-                                    <ul class='margin'>
-                                        <li>
-                                            <a href="indywidualne.html">Indywidualne</a>
-                                        </li>
-                                        <li>
-                                            <a href="komercyjne.html">Komercyjne</a>
-                                        </li>
-                                    </ul>
+<body>
+    <header>
+        <div class="container">
+            <div class="Header row">
+                <div class="logo">
+                    <a href="index.html"> <img src="images/LOGO.jpg"></a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li class="projects">
+                            <a href="index.html">Projekty</a>
+                            <ul class='margin'>
+                                <li>
+                                    <a href="indywidualne.html">Indywidualne</a>
                                 </li>
                                 <li>
-                                    <a href="wizualizacje.html">Wizualizacje</a>
-                                </li>
-                                <li>
-                                <a href="">Oferta</a>
-                                </li>
-                                <li>
-                                    <a href="contact.html">Kontakt</a>
+                                    <a href="komercyjne.html">Komercyjne</a>
                                 </li>
                             </ul>
-                    </div>
-             </div>
-         </div>
-      </header>
-        <section class="formularz">
+                        </li>
+                        <li>
+                            <a href="wizualizacje.html">Wizualizacje</a>
+                        </li>
+                        <li>
+                            <a href="oferta.html">Oferta</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="formularz">
         <form action="mail.php" id="contact-form" method="post">
-        <fieldset>
-            <legend>Formularz kontaktowy</legend>
-            <div class="item">
-                <label for="firstName">Imię<em>*</em></label>
-                <input required type="text" name="firstName" id="firstName" title="Proszę podać swoje Imię ">
+            <fieldset>
+                <legend>Formularz kontaktowy</legend>
+                <div class="item">
+                    <label for="firstName">Imię<em>*</em></label>
+                    <input required type="text" name="firstName" id="firstName" title="Proszę podać swoje Imię ">
+                </div>
+                <div class="item">
+                    <label for="secondName">Nazwisko<em>*</em></label>
+                    <input required type="text" name="subject" id="secondName" title="Proszę podać swoje Nazwisko ">
+                </div>
+                <div class="item">
+                    <label for="email">Email<em>*</em></label>
+                    <input required type="email" name="email" id="email" title="Proszę podać swój adres e-mail">
+                </div>
+                <div class="item">
+                    <label for="message">Wiadomość<em>*</em></label>
+                    <textarea required rows="10" cols="20" name="message" id="message" title="Wpisz treść swojej wiadomości"></textarea>
+                    			<?php echo $result; ?>	
 
-            </div>
-            <div class="item">
-                 <label for="secondName">Nazwisko<em>*</em></label>
-                <input required type="text" name="subject" id="secondName" title="Proszę podać swoje Nazwisko ">
-            </div>
-            <div class="item">
-                <label for="email">Email<em>*</em></label>
-                <input required type="email" name="email" id="email" title="Proszę podać swój adres e-mail">
-
-            </div>
-            <div class="item">
-                <label for="message">Wiadomość<em>*</em></label>
-                <textarea required rows="10" cols="20" name="message" id="message" title="Wpisz treść swojej wiadomości"></textarea>
-
-            </div>
-            <button type="submit" class="btn btn-success btn-lg">Wyślij</button>
-        </fieldset>
-    </form>
-
-   </section>
-   <footer>
-       <div class="container">
-           <div class="row">
-               <div class="col-sm-4 adres">
-                   <i class="fa fa-map-marker" aria-hidden="true"></i>
-                   <a href="https://goo.gl/hz7I8g" target="_blank"><h5>Adres</h5></a>
-                   <a href="https://goo.gl/hz7I8g" target="_blank" class="info">AMDESIGN<br> ul. Warszawska 79 Ip.
+                </div>
+                <button type="submit" class="btn btn-success btn-lg">Wyślij</button>
+            </fieldset>
+        </form>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 adres">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <a href="https://goo.gl/hz7I8g" target="_blank"><h5>Adres</h5></a>
+                    <a href="https://goo.gl/hz7I8g" target="_blank" class="info">AMDESIGN<br> ul. Warszawska 79 Ip.
                              98-100 Łask</a>
-               </div>
-               <div class="col-sm-4 telefon">
-                   <i class="fa fa-phone" aria-hidden="true"></i>
-                   <a href="tel:+48602258566"><h5>Zadzwoń</h5></a>
-                   <a href="tel:+48602258566"class="info">602 258 566</a>
-               </div>
-               <div class="col-sm-4 email">
-                   <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                   <a href="mailto://biuro@amdesign.com.pl"><h5>Napisz</h5></a>
-                   <a href="mailto://biuro@amdesign.com.pl" class="info">biuro@amdesign.com.pl</a>
-               </div>
+                </div>
+                <div class="col-sm-4 telefon">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <a href="tel:+48602258566"><h5>Zadzwoń</h5></a>
+                    <a href="tel:+48602258566" class="info">602 258 566</a>
+                </div>
+                <div class="col-sm-4 email">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <a href="mailto://biuro@amdesign.com.pl"><h5>Napisz</h5></a>
+                    <a href="mailto://biuro@amdesign.com.pl" class="info">biuro@amdesign.com.pl</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row row-social">
+                    <div class="copyright">
+                        <p>© 2017 All Rights Reserved</p>
+                    </div>
+                    <ul class="social">
+                        <li><a href="https://goo.gl/wMSUyH" target="_blank" class="fcb"><i class="fa fa-facebook-official"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/tether/dist/js/tether.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.js"></script>
+    <script>
+    $("#contact-form").validate({
+        errorClass: "text-error",
+        rules: {
+            subject: "required",
+            message: "required",
+            firstName: "required",
+            email: {
+                required: true,
+                email: true
+            }
+        },
+        messages: {
+            subject: "Proszę podać swoje Nazwisko",
+            message: "Nie wpisałeś treści wiadomości",
+            firstName: "podaj swoję Imię",
+            email: {
+                required: "Nie podałeś swojego adresu e-mail",
+                email: "Błędny format adresu e-mail"
+            }
+        }
+    });
+    </script>
+</body>
 
-           </div>
-       </div>
-       <div class="footer-bottom">
-           <div class="container">
-               <div class="row row-social">
-                   <div class="copyright">
-                       <p>© 2017 All Rights Reserved</p>
-                   </div>
-                   <ul class="social">
-                       <li><a href="https://goo.gl/wMSUyH" target="_blank" class="fcb"><i class="fa fa-facebook"></i></a></li>
-                   </ul>
-               </div>
-           </div>
-       </div>
-   </footer>
-      <script src="bower_components/jquery/dist/jquery.min.js"></script>
-      <script src="bower_components/tether/dist/js/tether.js"></script>
-      <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.js"></script>
-      <script src="js/app.js"></script
-<script>
-
-</script>
-
-
-
-    </body>
 </html>
