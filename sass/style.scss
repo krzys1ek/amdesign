@@ -499,4 +499,7 @@ div:nth-child(7) > ul{
       list-style-type: decimal;
 
 }
+.effect:hover {
+	transform: scale3d(0.98,0.98,0.98);
+}
 

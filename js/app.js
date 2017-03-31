@@ -11,6 +11,7 @@ lightbox.option({
     'alwaysShowNavOnTouchDevices':false,
 });
 
+
 // wylaczanie galerii przy width < 960px;
 var lightboxOnResize = function lightboxOnResize() {
     
