@@ -201,15 +201,13 @@ li.projects {
      padding-right: 10px;
      display: flex;
      flex-wrap:wrap;
-     justify-content: space-around;
 
  }
  .icon-div{
     width: 50%;
     text-align: center;
     padding-right: 4px;
-    height: 50%;
-    margin-bottom: 4px;
+    margin-bottom: 7px;
  }
  .what-img{
      width:100%;
@@ -381,7 +379,7 @@ a:hover, a:visited, a:link, a:active
     }
 }
 .slider {
-    height: 500px;
+    height: 550px;
 
 }
 @media (max-width:620px){
@@ -450,7 +448,7 @@ section.formularz{
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
-    background-color:rgba(0,0,0,0.05);
+    background-color:rgba(0,0,0,0.1);
 
 }
 }
@@ -462,11 +460,11 @@ section.formularz{
     text-align: center;
 }
 .gallery1, {
-    background-color:rgba(0,0,0,0.05);
+    background-color:rgba(0,0,0,0.1);
 }
   .gallery2 h1{
     margin-top: 0.5rem;
-    background-color:rgba(0,0,0,0.05);
+    background-color:rgba(0,0,0,0.1);
 }
 .copyright{
         align-items: baseline;      
