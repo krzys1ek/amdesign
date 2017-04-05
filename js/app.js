@@ -23,5 +23,13 @@ var lightboxOnResize = function lightboxOnResize() {
     }
 };
 
+
+$('.effect').mouseover(function(){
+    if ($(window).width()< 960){
+        $(this).css('transform', 'none');
+    }
+});
+
+
 $(document).ready(lightboxOnResize);
 $(window).resize(lightboxOnResize);
